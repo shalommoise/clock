@@ -78,14 +78,14 @@ body {
   top: 300px;
   z-index: 1;
 }
-.half {
+/* .half {
   background-color: antiquewhite;
   height: 50%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-}
+} */
 /* .sechalf {
   border-width: 0px;
   background-color: blueviolet;
