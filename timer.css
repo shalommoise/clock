@@ -1,64 +1,55 @@
 body {
+  box-sizing: border-box;
   background-color: blueviolet;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .Outerclock {
+  display: none;
   background-color: antiquewhite;
-  width: 605px;
-  height: 605px;
+  width: 600px;
+  height: 600px;
   margin: 20px;
   border-radius: 50%;
-  margin: auto;
 }
-.hands {
-  margin: auto;
-}
-.secondhand {
+
+.hands .secondhand {
+  position: absolute;
   background-color: blueviolet;
   width: 5px;
-  height: 600px;
-  margin: auto;
-  border-width: 0px;
-  border-color: antiquewhite;
-  z-index: 1;
-  opacity: 0.4;
-  transform: rotate(180deg);
+  height: 300px;
+  left: 50%;
+  transform-origin: 100% 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
-.minutehand {
+.hands .minutehand {
+  margin-top: 100px;
   position: absolute;
   background-color: blueviolet;
   width: 7px;
-  height: 500px;
+  height: 200px;
   left: 50%;
-  top: 100px;
-  border-width: 0px;
-  border-color: antiquewhite;
-  opacity: 0.6;
-  transform: rotate(180deg);
+  transform-origin: 100% 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
-.hourhand {
+.hands .hourhand {
   position: absolute;
+  margin-top: 200px;
   background-color: blueviolet;
   width: 9px;
-  height: 500px;
+  height: 100px;
   left: 50%;
-  top: 100px;
-  border-width: 0px;
-  border-color: antiquewhite;
-  opacity: 0.8;
-  transform: rotate(180deg);
+  transform-origin: 100% 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -66,63 +57,12 @@ body {
 }
 
 .circle {
-  /* display: none; */
-  background-color: antiquewhite;
-  margin: auto;
-
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
   position: absolute;
-  left: 400px;
-  top: 300px;
+  margin-top: 280px;
+  background-color: blueviolet;
+  width: 40px;
+  left: 49%;
+  height: 40px;
+  border-radius: 50%;
   z-index: 1;
 }
-/* .half {
-  background-color: antiquewhite;
-  height: 50%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-} */
-/* .sechalf {
-  border-width: 0px;
-  background-color: blueviolet;
-  border-color: antiquewhite;
-  opacity: 0.4;
-  width: 100%;
-  height: 50%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  z-index: -1;
-} */
-/* .minuthalf {
-  background-color: red;
-  border-color: antiquewhite;
-  opacity: 1;
-  width: 100%;
-  height: 41%;
-  opacity: 0.6;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  z-index: -1;
-} */
-/* .hourhalf {
-  border-width: 0px;
-  background-color: blue;
-  border-color: antiquewhite;
-  opacity: 1;
-  width: 100%;
-  height: 60%;
-  opacity: 0.8;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  z-index: -1;
-} */
